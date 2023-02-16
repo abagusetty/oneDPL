@@ -17,39 +17,40 @@
 #define _ONEDPL_COMPLEX
 
 #include "oneapi/dpl/internal/common_config.h"
-#include <complex>
+#define SYCL_EXT_ONEAPI_COMPLEX
+#include <sycl/ext/oneapi/experimental/sycl_complex.hpp>
 
 namespace oneapi
 {
 namespace dpl
 {
-using ::std::complex;
+using ::sycl::ext::oneapi::experimental::complex;
 
-using ::std::abs;
-using ::std::acos;
-using ::std::acosh;
-using ::std::arg;
-using ::std::asin;
-using ::std::asinh;
-using ::std::atan;
-using ::std::atanh;
-using ::std::conj;
-using ::std::cos;
-using ::std::cosh;
-using ::std::exp;
-using ::std::imag;
-using ::std::log;
-using ::std::log10;
-using ::std::norm;
-using ::std::polar;
-using ::std::pow;
-using ::std::proj;
-using ::std::real;
-using ::std::sin;
-using ::std::sinh;
-using ::std::sqrt;
-using ::std::tan;
-using ::std::tanh;
+using ::sycl::ext::oneapi::experimental::abs;
+using ::sycl::ext::oneapi::experimental::acos;
+using ::sycl::ext::oneapi::experimental::acosh;
+using ::sycl::ext::oneapi::experimental::arg;
+using ::sycl::ext::oneapi::experimental::asin;
+using ::sycl::ext::oneapi::experimental::asinh;
+using ::sycl::ext::oneapi::experimental::atan;
+using ::sycl::ext::oneapi::experimental::atanh;
+using ::sycl::ext::oneapi::experimental::conj;
+using ::sycl::ext::oneapi::experimental::cos;
+using ::sycl::ext::oneapi::experimental::cosh;
+using ::sycl::ext::oneapi::experimental::exp;
+using ::sycl::ext::oneapi::experimental::imag;
+using ::sycl::ext::oneapi::experimental::log;
+using ::sycl::ext::oneapi::experimental::log10;
+using ::sycl::ext::oneapi::experimental::norm;
+using ::sycl::ext::oneapi::experimental::polar;
+using ::sycl::ext::oneapi::experimental::pow;
+using ::sycl::ext::oneapi::experimental::proj;
+using ::sycl::ext::oneapi::experimental::real;
+using ::sycl::ext::oneapi::experimental::sin;
+using ::sycl::ext::oneapi::experimental::sinh;
+using ::sycl::ext::oneapi::experimental::sqrt;
+using ::sycl::ext::oneapi::experimental::tan;
+using ::sycl::ext::oneapi::experimental::tanh;
 
 } // namespace dpl
 } // namespace oneapi
